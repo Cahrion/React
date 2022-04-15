@@ -1,10 +1,11 @@
+// rcc
 import React, { Component } from 'react'
 
-export default class CategoryList extends Component {
+export default class ProductList extends Component {
   render() {
     return (
       <div>
-          <h3>Category List</h3>
+          <h3>Product List</h3>
       </div>
     )
 }

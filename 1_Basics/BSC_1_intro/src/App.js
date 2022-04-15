@@ -11,7 +11,8 @@ function App() {
       <Navi></Navi>
       <CategoryList></CategoryList>
       <ProductList></ProductList>
-      <Navi></Navi>
+      <ProductList/> {/* Second spelling */}
+      <Navi/>
 
       <hr></hr>
 

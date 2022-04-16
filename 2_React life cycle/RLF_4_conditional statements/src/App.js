@@ -1,5 +1,5 @@
 // Icabi KIRGIZ / React
-import React, { Component } from 'react' // import Component
+import React, { Component } from 'react' 
 import Navi from "./Navi";
 import CategoryList from "./CategoryList";
 import ProductList from "./ProductList";
@@ -13,16 +13,14 @@ export default class App extends Component {
     this.getProducts();
   };
 
-
-
   changeCategory = (category) => { 
     this.setState({ currentCategory: category.categoryName });
-    this.getProducts(category.id); // when click start function
+    this.getProducts(category.id); 
   };
 
   getProducts = (categoryId) => { 
     var url = 'http://localhost:3000/products';
-    if(categoryId){ // do have categoryID
+    if(categoryId){ 
       url += '?categoryId=' + categoryId;
     }
     fetch(url)
